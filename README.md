@@ -19,3 +19,6 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
 # phoenix_study
+
+![gif](https://github.com/willian-s123/phoenix_study/blob/media/phonix_crud.gif)
+
