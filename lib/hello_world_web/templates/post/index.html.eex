@@ -1,0 +1,25 @@
+<h1>All Posts</h1>
+
+<div>
+  <%= link 'New', to: Routes.post_path(@conn, :new) %>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= for post <- @posts do %>
+      <tr>
+        <td><%= post.title %></td>
+         <td>
+           <%= link 'detail', to: Routes.post_path(@conn, :show, post) %>
+           <%= link 'edit', to: Routes.post_path(@conn, :edit, post) %>
+         </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

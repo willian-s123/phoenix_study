@@ -1,0 +1,11 @@
+<h1>Show</h1>
+
+ <%= link 'posts', to: Routes.post_path(@conn, :index) %>
+
+<div class="row">
+  <%= @post.title %>
+</div>
+
+<div class="row">
+  <%= @post.body %>
+</div>
